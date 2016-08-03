@@ -1,0 +1,16 @@
+<h2>Item List Api</h2>
+
+<%= link_to 'All Items', api_items_path %><br>
+
+<% @sellers.each do |seller| %>
+  <%= link_to "Sold Items From Seller #{seller.name}", api_sold_items_list_path(seller) %><br>
+<% end %>
+
+<%= link_to "Random Item", api_item_path(rand(1..@items.length)) %><br>
+
+<% @categories.each do |category| %>
+  <%= link_to "Available Items for Category '#{category.name}'", api_available_items_path(category) %><br>
+<% end %>
+
+
+
