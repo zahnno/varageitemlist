@@ -1,24 +1,29 @@
-# README
+#Set up Api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Unzip Tar file
+- Access computers terminal
+- Navigate to the unzipped directories parent directory in terminal
 
-Things you may want to cover:
+*in terminal*
+- cd varageitemlist
+- bundle install
+- rake db:migrate
+- rake db:seed
 
-* Ruby version
+##To access from browser
 
-* System dependencies
+*in terminal*
+- rails s
 
-* Configuration
+*desktop*
+- open a browser(Mozilla, Chrome..etc)
+- In url
+    localhost:3000
 
-* Database creation
+*side note*
 
-* Database initialization
+After the Api response is received in the browser, you must hit the browsers back button and refresh the page to see the initial menu.
 
-* How to run the test suite
+##Running test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+bundle exec rspec

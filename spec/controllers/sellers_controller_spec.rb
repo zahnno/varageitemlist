@@ -21,7 +21,7 @@ module Api
         expect(parsed_response['seller']['name']).to eq("Greg")
       end
 
-      it " returns sold item 'sweater' " do
+      it "returns sold item 'sweater' " do
         parsed_response = JSON.parse(response.body)
         expect(parsed_response['seller']['items'].first['status']).to eq("Sold")
         expect(parsed_response['seller']['items'].first['title']).to eq("sweater")
